@@ -1,6 +1,6 @@
-import { ExpenseItem } from "./components/ExpenseItem";
-import { Expenses } from "./components/Expenses";
+import { Expenses } from "../src/components/Expenses/Expenses";
 import { Card } from './components/UI/Card'
+import { NewExpense } from './components/NewExpense/NewExpense'
 
 function App() {
   const expenses = [
@@ -31,6 +31,7 @@ function App() {
   ];
   return (
     <Card>
+    <NewExpense />
       <Expenses items={expenses} />
     </Card>
   );
