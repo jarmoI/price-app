@@ -40,8 +40,8 @@ export const ExpenseFormItem = (props) => {
   const submitHandler = (event) => {
     event.preventDefault();
     const dataToSend = {
-      title: expenseTitle,
-      amount: expenseAmount,
+      description: expenseTitle,
+      price: expenseAmount,
       date: new Date(expenseDate)
     }
     console.log(dataToSend)

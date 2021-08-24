@@ -17,7 +17,7 @@ export const ExpenseForm = (props) => {
       ...data,
       id: Math.random().toString()
     }
-    props.onAddExpense(expenseData);
+    props.onSaveExpenseDataHandler(expenseData);
 
   }
 
