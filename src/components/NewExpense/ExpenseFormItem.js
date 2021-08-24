@@ -39,14 +39,13 @@ export const ExpenseFormItem = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    
     const dataToSend = {
       title: expenseTitle,
       amount: expenseAmount,
       date: new Date(expenseDate)
     }
-
-    props.onSaveExpenseDataHandler(dataToSend);
+    console.log(dataToSend)
+    props.onSaveExpenseData(dataToSend);
     setexpenseAmount('');
     setexpenseDate('');
     setexpenseTitle('');
@@ -86,6 +85,8 @@ export const ExpenseFormItem = (props) => {
         </div>
       </div>
       <div className="new-expense__actions"></div>
+      <button type="button">Powrót</button>
+      <button type="submit" >Dodaj</button>
     </form>
   );
 };
