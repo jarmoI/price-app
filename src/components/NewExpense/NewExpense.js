@@ -20,38 +20,7 @@ export const NewExpense = (props) => {
     props.onAddExpense(expenseData);
   }
 
-  // const saveExpenseData = (enteredExpense) => {
-  //   const expenseData = {
-  //     ...enteredExpense,
-  //     id: Math.random().toString(),
-  //   };
-  //   console.log(expenseData);
-  //   props.onAddExpense(expenseData);
-  // };
-
-  {
-    /*
-    {formVisibility && (
-        <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} />
-      )}
-   <button onClick={showForm} type="submit">
-    Add expense
-    </button>
-    {formVisibility && (
-      <button type="button" onClick={hideForm}>
-        Cancel
-      </button>
-    )}
-  */
-  }
-
   return (
-    // <div className="new-expense">
-    // <button onClick={showForm} type="submit">
-    //   Add expense
-    //   </button>
-    //   { formVisibility && <ExpenseForm onSaveExpenseDataHandler={saveExpenseDataHandler} />}
-    //   </div>
     <div className="new-expense">
       {!formVisibility && <button onClick={showForm}>Dodaj</button>}
       {formVisibility && (

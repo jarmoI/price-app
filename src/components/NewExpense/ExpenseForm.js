@@ -53,8 +53,8 @@ export const ExpenseForm = (props) => {
     <div>
       <form onSubmit={submitHandler}>
         <div className="new-expense__controls">
-          <div className="new-expense__control">
-            <label>Title</label>
+          <div  className="new-expense__control">
+            <label>Tytuł</label>
             <input
               type="text"
               value={expenseTitle}
@@ -62,7 +62,7 @@ export const ExpenseForm = (props) => {
             />
           </div>
           <div className="new-expense__control">
-            <label>Amount</label>
+            <label>Kwota</label>
             <input
               type="number"
               min="0.01"
@@ -72,7 +72,7 @@ export const ExpenseForm = (props) => {
             />
           </div>
           <div className="new-expense__control">
-            <label>Date</label>
+            <label>Data</label>
             <input
               type="date"
               min="2019-01-01"
@@ -83,7 +83,9 @@ export const ExpenseForm = (props) => {
           </div>
         </div>
         <div className="new-expense__actions"></div>
-        <button type="button" onClick={props.onCancel}>Powrót</button>
+        <button type="button" onClick={props.onCancel}>
+          Powrót
+        </button>
         <button type="submit">Dodaj</button>
       </form>
     </div>
